@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University web design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/graduate-hat-6130500_1280.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!--About us content-->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the World's biggest university</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consectetur assumenda fugiat corporis eveniet, in hic ea. Veniam
+            eveniet omnis sequi aliquid consequatur fugit repellat harum.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis
+        dignissimos, id sapiente <br />
+        repellendus quaerat itaque in quod, sequi earum placeat vel. Eum, cumque
+        voluptatum.
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="far fa-heart"></i> By Geek'O'Engineers</p>
+    </section>
+
+    <!--script for navbar-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

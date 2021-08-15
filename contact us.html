@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University web design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="main.html"><img src="images/graduate-hat-6130500_1280.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!--Contact us content-->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109066.42047314157!2d75.50337905161291!3d31.322378738751176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2sJalandhar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1624360291218!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>XYZ road,ABC building</h5>
+            <p>Jalandhar,Punjab,India</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-phone"></i>
+          <span>
+            <h5>+123456789</h5>
+            <p>Monday to saturday 10 a.m. to 6 p.m.</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5>info@geekoengineers.com</h5>
+            <p>Email us your Query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="formhandler.php" method="POST">
+          <input type="text" name="name" placeholder="Enter your Name">
+          <input type="email" name="email" placeholder="Enter your Email">
+          <input type="text" name="subject" placeholder="Enter your Subject">
+          <textarea  rows="8" name="message" placeholder="Enter your Message"></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis
+        dignissimos, id sapiente <br />
+        repellendus quaerat itaque in quod, sequi earum placeat vel. Eum, cumque
+        voluptatum.
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="far fa-heart"></i> By Geek'O'Engineers</p>
+    </section>
+
+    <!--script for navbar-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
